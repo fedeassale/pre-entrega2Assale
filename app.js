@@ -24,7 +24,7 @@ if (seleccion == SI) {
         }
         cantidad=parseInt(prompt("cuantas unidades quiere llevar??"));
         carrito.push(new itemcarrito(listadeproductos[opcion-1].nombre,listadeproductos[opcion-1].precio,cantidad));
-        let carritope = carrito.map((productos,index) => `${index+1}-${productos.nombre}-${productos.precio}-cantidad:${cantidad}`);        
+        let carritope = carrito.map((productos,index) => `${index+1}-${productos.nombre}-$${productos.precio}-cantidad:${cantidad}`);        
         alert("Este es su carrito actual"+"\n"+carritope.join("\n"));
         salir=prompt("desea salir?? si/no")
     }while(salir!=SI);
